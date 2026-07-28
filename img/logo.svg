@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a4a7a"/>
+      <stop offset="50%" style="stop-color:#2d6ba8"/>
+      <stop offset="100%" style="stop-color:#0d2f52"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" style="stop-color:#4a9de0;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#0d2f52;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="100" cy="100" r="96" fill="url(#g)"/>
+  <circle cx="100" cy="100" r="96" fill="url(#glow)"/>
+  <!-- Continents simplified -->
+  <ellipse cx="85" cy="75" rx="28" ry="22" fill="#3d7ab5" opacity="0.5"/>
+  <ellipse cx="130" cy="110" rx="22" ry="18" fill="#3d7ab5" opacity="0.45"/>
+  <ellipse cx="70" cy="125" rx="18" ry="14" fill="#3d7ab5" opacity="0.4"/>
+  <!-- Grid lines -->
+  <ellipse cx="100" cy="100" rx="70" ry="96" fill="none" stroke="#5ba3d9" stroke-width="1" opacity="0.35"/>
+  <ellipse cx="100" cy="100" rx="40" ry="96" fill="none" stroke="#5ba3d9" stroke-width="1" opacity="0.3"/>
+  <line x1="4" y1="100" x2="196" y2="100" stroke="#5ba3d9" stroke-width="1" opacity="0.35"/>
+  <path d="M20 70 Q100 55 180 70" fill="none" stroke="#5ba3d9" stroke-width="1" opacity="0.3"/>
+  <path d="M20 130 Q100 145 180 130" fill="none" stroke="#5ba3d9" stroke-width="1" opacity="0.3"/>
+  <!-- Plane -->
+  <g transform="translate(100,95) rotate(-25)">
+    <path d="M-30 0 L25 -3 L28 0 L25 3 Z" fill="#fff"/>
+    <path d="M-5 -2 L5 -18 L12 -16 L2 0 Z" fill="#e85d04"/>
+    <path d="M-5 2 L5 18 L12 16 L2 0 Z" fill="#e85d04"/>
+    <path d="M-28 -1 L-20 -10 L-14 -8 L-22 0 Z" fill="#e85d04"/>
+  </g>
+  <!-- Text arc bottom -->
+  <path id="arc" d="M 30 140 A 75 75 0 0 0 170 140" fill="none"/>
+  <text fill="#fff" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="2">
+    <textPath href="#arc" startOffset="50%" text-anchor="middle">LOGISTIK TRANSPOR</textPath>
+  </text>
+  <text x="100" y="175" text-anchor="middle" fill="#f4a261" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="3">GESMT</text>
+</svg>

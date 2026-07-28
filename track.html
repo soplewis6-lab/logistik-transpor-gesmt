@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track Shipment — Logistik Transport Gesamt</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="topbar"><div class="container">
+    <div class="left"><a data-mailto href="mailto:logistiktransportgesamt@gmail.com">✉ logistiktransportgesamt@gmail.com</a><span data-i18n="seat_de"></span></div>
+    <div class="right"><div class="lang-switch"></div></div>
+  </div></div>
+  <nav class="navbar"><div class="container">
+    <a href="index.html" class="logo-link"><img src="img/logo-icon.png" alt="LTG"><div class="logo-text">LOGISTIK TRANSPORT<span>GESAMT</span></div></a>
+    <div class="nav-menu" id="navMenu">
+      <a href="index.html" data-i18n="nav_home"></a>
+      <a href="about.html" data-i18n="nav_about"></a>
+      <a href="services.html" data-i18n="nav_services"></a>
+      <a href="contact.html" data-i18n="nav_contact"></a>
+      <a href="track.html" class="active" data-i18n="nav_track"></a>
+      <a href="track.html" class="btn btn-orange btn-sm" data-i18n="nav_track_btn"></a>
+    </div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div></nav>
+
+  <section class="page-banner"><div class="container">
+    <h1 data-i18n="track_banner"></h1>
+    <div class="breadcrumbs"><a href="index.html" data-i18n="home"></a> / <span data-i18n="track_title"></span></div>
+  </div></section>
+
+  <section class="section section-gray"><div class="container">
+    <div class="track-box fade-up">
+      <img src="img/logo-icon.png" alt="LTG" style="width:72px;height:72px;border-radius:14px;margin:0 auto 16px;object-fit:cover">
+      <h2 data-i18n="track_h2"></h2>
+      <p data-i18n="track_p"></p>
+      <form class="track-form" id="trackForm">
+        <input type="text" id="trackNum" data-i18n-placeholder="track_ph" placeholder="LTG-2026-0001" required>
+        <button type="submit" class="btn btn-orange" data-i18n="track_now"></button>
+      </form>
+      <div class="track-result" id="trackResult" style="display:none">
+        <div style="background:rgba(232,163,23,.12);padding:16px;border-radius:10px;margin-bottom:20px">
+          <strong id="trackStatusTitle" style="color:var(--orange-h)"></strong>
+          <p id="trackStatusText" style="font-size:.9rem;color:var(--gray);margin-top:4px"></p>
+        </div>
+        <div class="track-timeline" id="trackTimeline"></div>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="section"><div class="container" style="text-align:center">
+    <div class="section-head center"><span class="badge-tag">?</span><h2 data-i18n="track_help"></h2><p data-i18n="track_help_p"></p></div>
+    <a href="contact.html" class="btn btn-orange" data-i18n="track_support"></a>
+    <a data-gmail href="#" target="_blank" class="btn btn-gmail" style="margin-left:8px" data-i18n="gmail_btn"></a>
+  </div></section>
+
+  <footer class="footer"><div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="index.html" class="logo-link"><img src="img/logo-icon.png" alt="" style="width:48px;height:48px;border-radius:10px"><div class="logo-text">LOGISTIK TRANSPORT<span>GESAMT</span></div></a><p data-i18n="footer_about"></p><a data-mailto href="mailto:logistiktransportgesamt@gmail.com" class="email">✉ logistiktransportgesamt@gmail.com</a></div>
+      <div class="footer-col"><h4 data-i18n="quick_links"></h4><ul><li><a href="index.html" data-i18n="nav_home"></a></li><li><a href="about.html" data-i18n="nav_about"></a></li><li><a href="contact.html" data-i18n="nav_contact"></a></li><li><a href="track.html" data-i18n="nav_track_btn"></a></li></ul></div>
+      <div class="footer-col"><h4 data-i18n="nav_services"></h4><ul><li><a href="services.html" data-i18n="svc_ocean"></a></li><li><a href="services.html" data-i18n="svc_air"></a></li><li><a href="services.html" data-i18n="svc_land"></a></li></ul></div>
+      <div class="footer-col footer-news"><h4 data-i18n="newsletter"></h4><p data-i18n="news_desc"></p><form id="footerNews"><input type="email" data-i18n-placeholder="your_email" required><button type="submit">Go</button></form></div>
+    </div>
+    <div class="footer-bottom"><p data-i18n="copyright"></p><div class="lang-switch"></div></div>
+    <div class="footer-seat">📍 <span data-i18n="seat_de"></span></div>
+  </div></footer>
+  <div class="float-stack"><a data-gmail href="#" target="_blank" class="float-gmail"><span class="g-icon">M</span><span class="txt" data-i18n="gmail_btn"></span></a></div>
+  <div class="lang-toast" id="langToast"></div>
+  <script src="js/i18n.js"></script><script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Logistik Transport Gesamt</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="topbar"><div class="container">
+    <div class="left"><a data-mailto href="mailto:logistiktransportgesamt@gmail.com">✉ logistiktransportgesamt@gmail.com</a><span data-i18n="seat_de"></span></div>
+    <div class="right"><div class="lang-switch"></div></div>
+  </div></div>
+  <nav class="navbar"><div class="container">
+    <a href="index.html" class="logo-link"><img src="img/logo-icon.png" alt="LTG"><div class="logo-text">LOGISTIK TRANSPORT<span>GESAMT</span></div></a>
+    <div class="nav-menu" id="navMenu">
+      <a href="index.html" data-i18n="nav_home"></a>
+      <a href="about.html" data-i18n="nav_about"></a>
+      <a href="services.html" data-i18n="nav_services"></a>
+      <a href="contact.html" class="active" data-i18n="nav_contact"></a>
+      <a href="track.html" data-i18n="nav_track"></a>
+      <a href="track.html" class="btn btn-orange btn-sm" data-i18n="nav_track_btn"></a>
+    </div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div></nav>
+
+  <section class="page-banner"><div class="container">
+    <h1 data-i18n="contact_title"></h1>
+    <div class="breadcrumbs"><a href="index.html" data-i18n="home"></a> / <span data-i18n="contact_title"></span></div>
+  </div></section>
+
+  <section class="section section-gray"><div class="container">
+    <!-- Gmail highlight -->
+    <div class="fade-up" style="background:#fff;border:2px solid #ea4335;border-radius:16px;padding:22px 26px;margin-bottom:36px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px">
+      <div style="display:flex;align-items:center;gap:14px">
+        <div style="width:52px;height:52px;border-radius:50%;background:#ea4335;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.4rem">M</div>
+        <div>
+          <div style="font-size:.78rem;text-transform:uppercase;letter-spacing:1px;color:var(--gray)" data-i18n="main_channel"></div>
+          <a data-mailto href="mailto:logistiktransportgesamt@gmail.com" style="font-weight:800;color:#ea4335;font-size:1.1rem">logistiktransportgesamt@gmail.com</a>
+          <div style="font-size:.85rem;color:var(--gray)" data-i18n="reply_fast"></div>
+        </div>
+      </div>
+      <a data-gmail href="#" target="_blank" class="btn btn-gmail"><span data-i18n="gmail_btn"></span> ↗</a>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info-cards fade-up">
+        <div class="ci-card"><div class="ico">📍</div><div><h4 data-i18n="office"></h4><p data-i18n="office_addr" data-i18n-html></p></div></div>
+        <div class="ci-card"><div class="ico">✉</div><div><h4 data-i18n="email_label"></h4><p><a data-mailto href="mailto:logistiktransportgesamt@gmail.com">logistiktransportgesamt@gmail.com</a></p></div></div>
+        <div class="ci-card"><div class="ico">🌐</div><div><h4 data-i18n="net"></h4><p data-i18n="net_d"></p></div></div>
+        <div class="ci-card"><div class="ico">🕒</div><div><h4 data-i18n="working"></h4><p data-i18n="working_h" data-i18n-html></p></div></div>
+      </div>
+      <div class="contact-form-box fade-up">
+        <h2 style="font-size:1.45rem;font-weight:800;margin-bottom:6px" data-i18n="contact_get"></h2>
+        <p style="color:var(--gray);margin-bottom:22px;font-size:.95rem" data-i18n="contact_p"></p>
+        <form id="contactForm">
+          <div class="form-row">
+            <div class="form-group"><label data-i18n="full_name"></label><input type="text" id="cName" data-i18n-placeholder="ph_name" required></div>
+            <div class="form-group"><label data-i18n="email_f"></label><input type="email" id="cEmail" data-i18n-placeholder="ph_email" required></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label data-i18n="phone_f"></label><input type="tel" id="cPhone" data-i18n-placeholder="ph_phone"></div>
+            <div class="form-group"><label data-i18n="service_f"></label>
+              <select id="cService">
+                <option value="" data-i18n="sel_svc"></option>
+                <option data-i18n="svc_ocean"></option>
+                <option data-i18n="svc_air"></option>
+                <option data-i18n="svc_land"></option>
+                <option data-i18n="svc_rail"></option>
+                <option data-i18n="svc_ware"></option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group full" style="margin-bottom:16px"><label data-i18n="msg_f"></label><textarea id="cMsg" rows="5" data-i18n-placeholder="ph_msg" required></textarea></div>
+          <button type="submit" class="btn btn-gmail" style="width:100%;justify-content:center"><span data-i18n="send_msg"></span> · Gmail ↗</button>
+          <p class="form-msg" id="formMsg"></p>
+        </form>
+      </div>
+    </div>
+  </div></section>
+
+  <footer class="footer"><div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="index.html" class="logo-link"><img src="img/logo-icon.png" alt="" style="width:48px;height:48px;border-radius:10px"><div class="logo-text">LOGISTIK TRANSPORT<span>GESAMT</span></div></a><p data-i18n="footer_about"></p><a data-mailto href="mailto:logistiktransportgesamt@gmail.com" class="email">✉ logistiktransportgesamt@gmail.com</a></div>
+      <div class="footer-col"><h4 data-i18n="quick_links"></h4><ul><li><a href="index.html" data-i18n="nav_home"></a></li><li><a href="about.html" data-i18n="nav_about"></a></li><li><a href="services.html" data-i18n="nav_services"></a></li><li><a href="track.html" data-i18n="nav_track_btn"></a></li></ul></div>
+      <div class="footer-col"><h4 data-i18n="nav_services"></h4><ul><li><a href="services.html" data-i18n="svc_ocean"></a></li><li><a href="services.html" data-i18n="svc_air"></a></li><li><a href="services.html" data-i18n="svc_land"></a></li></ul></div>
+      <div class="footer-col footer-news"><h4 data-i18n="newsletter"></h4><p data-i18n="news_desc"></p><form id="footerNews"><input type="email" data-i18n-placeholder="your_email" required><button type="submit">Go</button></form></div>
+    </div>
+    <div class="footer-bottom"><p data-i18n="copyright"></p><div class="lang-switch"></div></div>
+    <div class="footer-seat">📍 <span data-i18n="seat_de"></span></div>
+  </div></footer>
+  <div class="float-stack"><a data-gmail href="#" target="_blank" class="float-gmail"><span class="g-icon">M</span><span class="txt" data-i18n="gmail_btn"></span></a></div>
+  <div class="lang-toast" id="langToast"></div>
+  <script src="js/i18n.js"></script><script src="js/script.js"></script>
+</body>
+</html>
